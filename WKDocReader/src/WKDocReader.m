@@ -1186,6 +1186,14 @@ NSString *const WKAutosizeDocumentAttribute = @"WKAutosizeDocumentAttribute";
 	NSDate *modificationDate = [self dateWithDTTM:dttmModified];
 	[_documentAttributes setObject:creationDate forKey:WKCreationTimeDocumentAttribute];
 	[_documentAttributes setObject:modificationDate forKey:WKModificationTimeDocumentAttribute];
+	[_tableStream skipBytes:54];
+	uint16_t flags16 = ([_tableStream readUInt16] & 0x3FFF);
+	uint8_t wvkoSaved = (flags16 & 0x07);
+	[_documentAttributes setObject:[NSNumber numberWithChar:wvkoSaved] forKey:WKViewModeDocumentAttribute];
+	uint16_t pctWwdSaved = (flags16 & 0x0FF8) >> 3;
+	[_documentAttributes setObject:[NSNumber numberWithShort:pctWwdSaved] forKey:WKViewZoomDocumentAttribute];
+	uint8_t zkSaved = (flags16 & 0xC000) >> 12;
+	[_documentAttributes setObject:[NSNumber numberWithChar:zkSaved] forKey:WKAutosizeDocumentAttribute];
 	
 }
 
