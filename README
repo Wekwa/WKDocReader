@@ -1,0 +1,40 @@
+WKDocReader is an iOS class for converting Microsoft Word .doc files to NSAttributedStrings.
+
+Supported:
+
+-Bold
+-Italic
+-Underline style
+-Underline color
+-Outline
+-Text foreground color
+-Text background color
+-Font
+-Font Size
+-Superscript/subscript
+-Alignment
+-Right indent
+-Left indent
+-First line left indent
+-Line spacing
+-Paragraph spacing
+-Writing direction
+-Columns
+-Page orientation
+-Page size
+-Margins
+-Is the document read-only
+-Should mark spelling/grammar errors
+-Default tab interval
+-Creation time
+-Modification time
+-View mode
+-View zoom
+-View auto-zoom
+
+Unsupported:
+
+-URLs
+-Bulleted/numbered lists
+-Images/shapes
+-Tables (the text  content of a table appears, but not organized into a table.)

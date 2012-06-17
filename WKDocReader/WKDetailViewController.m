@@ -1,12 +1,5 @@
-//
-//  WKDetailViewController.m
-//  WKDocReader
-//
-//  Created by Wyatt Kaufman on 6/17/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
-
 #import "WKDetailViewController.h"
+#import "WKDocumentInfoViewController.h"
 
 @interface WKDetailViewController ()
 - (void)configureView;
@@ -14,83 +7,41 @@
 
 @implementation WKDetailViewController
 
-@synthesize detailItem = _detailItem;
-@synthesize detailDescriptionLabel = _detailDescriptionLabel;
+@synthesize detailItem = _detailItem, documentInfo;
 
 - (void)dealloc
 {
 	[_detailItem release];
-	[_detailDescriptionLabel release];
     [super dealloc];
 }
 
-#pragma mark - Managing the detail item
-
 - (void)setDetailItem:(id)newDetailItem
 {
-    if (_detailItem != newDetailItem) {
         [_detailItem release]; 
         _detailItem = [newDetailItem retain]; 
-
-        // Update the view.
+		
         [self configureView];
-    }
+    
 }
 
 - (void)configureView
 {
-    // Update the user interface for the detail item.
-
 	if (self.detailItem) {
-	    self.detailDescriptionLabel.text = [self.detailItem description];
+		[coreTextView setAttributedString:self.detailItem];
 	}
 }
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
-}
-
-#pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	coreTextView = [[WKCoreTextView alloc] initWithFrame:self.view.bounds];
+	[self.view addSubview:coreTextView];
+	self.navigationItem.rightBarButtonItem = infoButton;
 	[self configureView];
-}
-
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-	[super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-	[super viewDidDisappear:animated];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Return YES for supported orientations
 	return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
@@ -101,6 +52,14 @@
 		self.title = NSLocalizedString(@"Detail", @"Detail");
     }
     return self;
+}
+
+-(void)viewDocumentInfo:(id)sender
+{
+	WKDocumentInfoViewController *documentInfoController = [[WKDocumentInfoViewController alloc] init];
+	[documentInfoController setDictionary:documentInfo];
+	[self presentModalViewController:documentInfoController animated:YES];
+	[documentInfoController release];
 }
 							
 @end

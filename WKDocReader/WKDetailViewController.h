@@ -1,17 +1,14 @@
-//
-//  WKDetailViewController.h
-//  WKDocReader
-//
-//  Created by Wyatt Kaufman on 6/17/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
+#import "WKCoreTextView.h"
 
-@interface WKDetailViewController : UIViewController
+@interface WKDetailViewController : UIViewController {
+	WKCoreTextView *coreTextView;
+	IBOutlet UIBarButtonItem *infoButton;
+}
 
 @property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic) NSDictionary *documentInfo;
 
-@property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+-(IBAction)viewDocumentInfo:(id)sender;
 
 @end

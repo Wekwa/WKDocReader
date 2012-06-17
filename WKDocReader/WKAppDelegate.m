@@ -1,11 +1,3 @@
-//
-//  WKAppDelegate.m
-//  WKDocReader
-//
-//  Created by Wyatt Kaufman on 6/17/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
-
 #import "WKAppDelegate.h"
 
 #import "WKMasterViewController.h"

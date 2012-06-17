@@ -17,6 +17,15 @@
 		1B454F54158DC840009273AD /* WKDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B454F53158DC840009273AD /* WKDetailViewController.m */; };
 		1B454F57158DC840009273AD /* WKMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B454F55158DC840009273AD /* WKMasterViewController.xib */; };
 		1B454F5A158DC840009273AD /* WKDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B454F58158DC840009273AD /* WKDetailViewController.xib */; };
+		1B454F65158DC853009273AD /* WKDataStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B454F62158DC853009273AD /* WKDataStream.m */; };
+		1B454F66158DC853009273AD /* WKDocReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B454F64158DC853009273AD /* WKDocReader.m */; };
+		1B454F68158DC86C009273AD /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B454F67158DC86C009273AD /* CoreText.framework */; };
+		1B454F6E158DCB96009273AD /* WKCoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B454F6D158DCB96009273AD /* WKCoreTextView.m */; };
+		1B454F73158DCEB7009273AD /* Bold-Italic-Underline.doc in Resources */ = {isa = PBXBuildFile; fileRef = 1B454F70158DCEB7009273AD /* Bold-Italic-Underline.doc */; };
+		1B454F74158DCEB7009273AD /* Fonts-colors-sizes.doc in Resources */ = {isa = PBXBuildFile; fileRef = 1B454F71158DCEB7009273AD /* Fonts-colors-sizes.doc */; };
+		1B454F75158DCEB7009273AD /* ParagraphStyle.doc in Resources */ = {isa = PBXBuildFile; fileRef = 1B454F72158DCEB7009273AD /* ParagraphStyle.doc */; };
+		1B454F79158DD300009273AD /* WKDocumentInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B454F77158DD300009273AD /* WKDocumentInfoViewController.m */; };
+		1B454F7A158DD300009273AD /* WKDocumentInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B454F78158DD300009273AD /* WKDocumentInfoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,18 +33,31 @@
 		1B454F3D158DC840009273AD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1B454F3F158DC840009273AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1B454F41158DC840009273AD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1B454F45158DC840009273AD /* WKDocReader-Info.plist */ = {isa = PBXFileReference; path = "WKDocReader-Info.plist"; sourceTree = "<group>"; };
+		1B454F45158DC840009273AD /* WKDocReader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WKDocReader-Info.plist"; sourceTree = "<group>"; };
 		1B454F47158DC840009273AD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1B454F49158DC840009273AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1B454F4B158DC840009273AD /* WKDocReader-Prefix.pch */ = {isa = PBXFileReference; path = "WKDocReader-Prefix.pch"; sourceTree = "<group>"; };
-		1B454F4C158DC840009273AD /* WKAppDelegate.h */ = {isa = PBXFileReference; path = WKAppDelegate.h; sourceTree = "<group>"; };
+		1B454F4B158DC840009273AD /* WKDocReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WKDocReader-Prefix.pch"; sourceTree = "<group>"; };
+		1B454F4C158DC840009273AD /* WKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKAppDelegate.h; sourceTree = "<group>"; };
 		1B454F4D158DC840009273AD /* WKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKAppDelegate.m; sourceTree = "<group>"; };
-		1B454F4F158DC840009273AD /* WKMasterViewController.h */ = {isa = PBXFileReference; path = WKMasterViewController.h; sourceTree = "<group>"; };
+		1B454F4F158DC840009273AD /* WKMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKMasterViewController.h; sourceTree = "<group>"; };
 		1B454F50158DC840009273AD /* WKMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKMasterViewController.m; sourceTree = "<group>"; };
-		1B454F52158DC840009273AD /* WKDetailViewController.h */ = {isa = PBXFileReference; path = WKDetailViewController.h; sourceTree = "<group>"; };
+		1B454F52158DC840009273AD /* WKDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKDetailViewController.h; sourceTree = "<group>"; };
 		1B454F53158DC840009273AD /* WKDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKDetailViewController.m; sourceTree = "<group>"; };
 		1B454F56158DC840009273AD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WKMasterViewController.xib; sourceTree = "<group>"; };
 		1B454F59158DC840009273AD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WKDetailViewController.xib; sourceTree = "<group>"; };
+		1B454F61158DC853009273AD /* WKDataStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKDataStream.h; sourceTree = "<group>"; };
+		1B454F62158DC853009273AD /* WKDataStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKDataStream.m; sourceTree = "<group>"; };
+		1B454F63158DC853009273AD /* WKDocReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKDocReader.h; sourceTree = "<group>"; };
+		1B454F64158DC853009273AD /* WKDocReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKDocReader.m; sourceTree = "<group>"; };
+		1B454F67158DC86C009273AD /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		1B454F6C158DCB96009273AD /* WKCoreTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKCoreTextView.h; sourceTree = "<group>"; };
+		1B454F6D158DCB96009273AD /* WKCoreTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKCoreTextView.m; sourceTree = "<group>"; };
+		1B454F70158DCEB7009273AD /* Bold-Italic-Underline.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bold-Italic-Underline.doc"; sourceTree = "<group>"; };
+		1B454F71158DCEB7009273AD /* Fonts-colors-sizes.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fonts-colors-sizes.doc"; sourceTree = "<group>"; };
+		1B454F72158DCEB7009273AD /* ParagraphStyle.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = ParagraphStyle.doc; sourceTree = "<group>"; };
+		1B454F76158DD300009273AD /* WKDocumentInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKDocumentInfoViewController.h; sourceTree = "<group>"; };
+		1B454F77158DD300009273AD /* WKDocumentInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKDocumentInfoViewController.m; sourceTree = "<group>"; };
+		1B454F78158DD300009273AD /* WKDocumentInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKDocumentInfoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B454F68158DC86C009273AD /* CoreText.framework in Frameworks */,
 				1B454F3E158DC840009273AD /* UIKit.framework in Frameworks */,
 				1B454F40158DC840009273AD /* Foundation.framework in Frameworks */,
 				1B454F42158DC840009273AD /* CoreGraphics.framework in Frameworks */,
@@ -72,6 +95,7 @@
 		1B454F3C158DC840009273AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1B454F67158DC86C009273AD /* CoreText.framework */,
 				1B454F3D158DC840009273AD /* UIKit.framework */,
 				1B454F3F158DC840009273AD /* Foundation.framework */,
 				1B454F41158DC840009273AD /* CoreGraphics.framework */,
@@ -82,14 +106,21 @@
 		1B454F43158DC840009273AD /* WKDocReader */ = {
 			isa = PBXGroup;
 			children = (
+				1B454F6F158DCEB7009273AD /* examples */,
+				1B454F60158DC853009273AD /* src */,
+				1B454F6C158DCB96009273AD /* WKCoreTextView.h */,
+				1B454F6D158DCB96009273AD /* WKCoreTextView.m */,
 				1B454F4C158DC840009273AD /* WKAppDelegate.h */,
 				1B454F4D158DC840009273AD /* WKAppDelegate.m */,
 				1B454F4F158DC840009273AD /* WKMasterViewController.h */,
 				1B454F50158DC840009273AD /* WKMasterViewController.m */,
 				1B454F52158DC840009273AD /* WKDetailViewController.h */,
 				1B454F53158DC840009273AD /* WKDetailViewController.m */,
+				1B454F76158DD300009273AD /* WKDocumentInfoViewController.h */,
+				1B454F77158DD300009273AD /* WKDocumentInfoViewController.m */,
 				1B454F55158DC840009273AD /* WKMasterViewController.xib */,
 				1B454F58158DC840009273AD /* WKDetailViewController.xib */,
+				1B454F78158DD300009273AD /* WKDocumentInfoViewController.xib */,
 				1B454F44158DC840009273AD /* Supporting Files */,
 			);
 			path = WKDocReader;
@@ -104,6 +135,27 @@
 				1B454F4B158DC840009273AD /* WKDocReader-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B454F60158DC853009273AD /* src */ = {
+			isa = PBXGroup;
+			children = (
+				1B454F61158DC853009273AD /* WKDataStream.h */,
+				1B454F62158DC853009273AD /* WKDataStream.m */,
+				1B454F63158DC853009273AD /* WKDocReader.h */,
+				1B454F64158DC853009273AD /* WKDocReader.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		1B454F6F158DCEB7009273AD /* examples */ = {
+			isa = PBXGroup;
+			children = (
+				1B454F70158DCEB7009273AD /* Bold-Italic-Underline.doc */,
+				1B454F71158DCEB7009273AD /* Fonts-colors-sizes.doc */,
+				1B454F72158DCEB7009273AD /* ParagraphStyle.doc */,
+			);
+			path = examples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +211,10 @@
 				1B454F48158DC840009273AD /* InfoPlist.strings in Resources */,
 				1B454F57158DC840009273AD /* WKMasterViewController.xib in Resources */,
 				1B454F5A158DC840009273AD /* WKDetailViewController.xib in Resources */,
+				1B454F73158DCEB7009273AD /* Bold-Italic-Underline.doc in Resources */,
+				1B454F74158DCEB7009273AD /* Fonts-colors-sizes.doc in Resources */,
+				1B454F75158DCEB7009273AD /* ParagraphStyle.doc in Resources */,
+				1B454F7A158DD300009273AD /* WKDocumentInfoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +229,10 @@
 				1B454F4E158DC840009273AD /* WKAppDelegate.m in Sources */,
 				1B454F51158DC840009273AD /* WKMasterViewController.m in Sources */,
 				1B454F54158DC840009273AD /* WKDetailViewController.m in Sources */,
+				1B454F65158DC853009273AD /* WKDataStream.m in Sources */,
+				1B454F66158DC853009273AD /* WKDocReader.m in Sources */,
+				1B454F6E158DCB96009273AD /* WKCoreTextView.m in Sources */,
+				1B454F79158DD300009273AD /* WKDocumentInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +315,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WKDocReader/WKDocReader-Prefix.pch";
 				INFOPLIST_FILE = "WKDocReader/WKDocReader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -266,6 +327,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WKDocReader/WKDocReader-Prefix.pch";
 				INFOPLIST_FILE = "WKDocReader/WKDocReader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -290,6 +352,7 @@
 				1B454F5F158DC840009273AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
