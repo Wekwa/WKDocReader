@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B454F3E158DC840009273AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B454F3D158DC840009273AD /* UIKit.framework */; };
+		1B454F40158DC840009273AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B454F3F158DC840009273AD /* Foundation.framework */; };
+		1B454F42158DC840009273AD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B454F41158DC840009273AD /* CoreGraphics.framework */; };
+		1B454F48158DC840009273AD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B454F46158DC840009273AD /* InfoPlist.strings */; };
+		1B454F4A158DC840009273AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B454F49158DC840009273AD /* main.m */; };
+		1B454F4E158DC840009273AD /* WKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B454F4D158DC840009273AD /* WKAppDelegate.m */; };
+		1B454F51158DC840009273AD /* WKMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B454F50158DC840009273AD /* WKMasterViewController.m */; };
+		1B454F54158DC840009273AD /* WKDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B454F53158DC840009273AD /* WKDetailViewController.m */; };
+		1B454F57158DC840009273AD /* WKMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B454F55158DC840009273AD /* WKMasterViewController.xib */; };
+		1B454F5A158DC840009273AD /* WKDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B454F58158DC840009273AD /* WKDetailViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B454F39158DC840009273AD /* WKDocReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKDocReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B454F3D158DC840009273AD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1B454F3F158DC840009273AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1B454F41158DC840009273AD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1B454F45158DC840009273AD /* WKDocReader-Info.plist */ = {isa = PBXFileReference; path = "WKDocReader-Info.plist"; sourceTree = "<group>"; };
+		1B454F47158DC840009273AD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1B454F49158DC840009273AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1B454F4B158DC840009273AD /* WKDocReader-Prefix.pch */ = {isa = PBXFileReference; path = "WKDocReader-Prefix.pch"; sourceTree = "<group>"; };
+		1B454F4C158DC840009273AD /* WKAppDelegate.h */ = {isa = PBXFileReference; path = WKAppDelegate.h; sourceTree = "<group>"; };
+		1B454F4D158DC840009273AD /* WKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKAppDelegate.m; sourceTree = "<group>"; };
+		1B454F4F158DC840009273AD /* WKMasterViewController.h */ = {isa = PBXFileReference; path = WKMasterViewController.h; sourceTree = "<group>"; };
+		1B454F50158DC840009273AD /* WKMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKMasterViewController.m; sourceTree = "<group>"; };
+		1B454F52158DC840009273AD /* WKDetailViewController.h */ = {isa = PBXFileReference; path = WKDetailViewController.h; sourceTree = "<group>"; };
+		1B454F53158DC840009273AD /* WKDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKDetailViewController.m; sourceTree = "<group>"; };
+		1B454F56158DC840009273AD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WKMasterViewController.xib; sourceTree = "<group>"; };
+		1B454F59158DC840009273AD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WKDetailViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B454F36158DC83F009273AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B454F3E158DC840009273AD /* UIKit.framework in Frameworks */,
+				1B454F40158DC840009273AD /* Foundation.framework in Frameworks */,
+				1B454F42158DC840009273AD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B454F2E158DC83F009273AD = {
+			isa = PBXGroup;
+			children = (
+				1B454F43158DC840009273AD /* WKDocReader */,
+				1B454F3C158DC840009273AD /* Frameworks */,
+				1B454F3A158DC840009273AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1B454F3A158DC840009273AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B454F39158DC840009273AD /* WKDocReader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B454F3C158DC840009273AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B454F3D158DC840009273AD /* UIKit.framework */,
+				1B454F3F158DC840009273AD /* Foundation.framework */,
+				1B454F41158DC840009273AD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1B454F43158DC840009273AD /* WKDocReader */ = {
+			isa = PBXGroup;
+			children = (
+				1B454F4C158DC840009273AD /* WKAppDelegate.h */,
+				1B454F4D158DC840009273AD /* WKAppDelegate.m */,
+				1B454F4F158DC840009273AD /* WKMasterViewController.h */,
+				1B454F50158DC840009273AD /* WKMasterViewController.m */,
+				1B454F52158DC840009273AD /* WKDetailViewController.h */,
+				1B454F53158DC840009273AD /* WKDetailViewController.m */,
+				1B454F55158DC840009273AD /* WKMasterViewController.xib */,
+				1B454F58158DC840009273AD /* WKDetailViewController.xib */,
+				1B454F44158DC840009273AD /* Supporting Files */,
+			);
+			path = WKDocReader;
+			sourceTree = "<group>";
+		};
+		1B454F44158DC840009273AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B454F45158DC840009273AD /* WKDocReader-Info.plist */,
+				1B454F46158DC840009273AD /* InfoPlist.strings */,
+				1B454F49158DC840009273AD /* main.m */,
+				1B454F4B158DC840009273AD /* WKDocReader-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B454F38158DC83F009273AD /* WKDocReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B454F5D158DC840009273AD /* Build configuration list for PBXNativeTarget "WKDocReader" */;
+			buildPhases = (
+				1B454F35158DC83F009273AD /* Sources */,
+				1B454F36158DC83F009273AD /* Frameworks */,
+				1B454F37158DC83F009273AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WKDocReader;
+			productName = WKDocReader;
+			productReference = 1B454F39158DC840009273AD /* WKDocReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B454F30158DC83F009273AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 1B454F33158DC83F009273AD /* Build configuration list for PBXProject "WKDocReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1B454F2E158DC83F009273AD;
+			productRefGroup = 1B454F3A158DC840009273AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B454F38158DC83F009273AD /* WKDocReader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B454F37158DC83F009273AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B454F48158DC840009273AD /* InfoPlist.strings in Resources */,
+				1B454F57158DC840009273AD /* WKMasterViewController.xib in Resources */,
+				1B454F5A158DC840009273AD /* WKDetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B454F35158DC83F009273AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B454F4A158DC840009273AD /* main.m in Sources */,
+				1B454F4E158DC840009273AD /* WKAppDelegate.m in Sources */,
+				1B454F51158DC840009273AD /* WKMasterViewController.m in Sources */,
+				1B454F54158DC840009273AD /* WKDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1B454F46158DC840009273AD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B454F47158DC840009273AD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1B454F55158DC840009273AD /* WKMasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B454F56158DC840009273AD /* en */,
+			);
+			name = WKMasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		1B454F58158DC840009273AD /* WKDetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B454F59158DC840009273AD /* en */,
+			);
+			name = WKDetailViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1B454F5B158DC840009273AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1B454F5C158DC840009273AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B454F5E158DC840009273AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WKDocReader/WKDocReader-Prefix.pch";
+				INFOPLIST_FILE = "WKDocReader/WKDocReader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1B454F5F158DC840009273AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WKDocReader/WKDocReader-Prefix.pch";
+				INFOPLIST_FILE = "WKDocReader/WKDocReader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B454F33158DC83F009273AD /* Build configuration list for PBXProject "WKDocReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B454F5B158DC840009273AD /* Debug */,
+				1B454F5C158DC840009273AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B454F5D158DC840009273AD /* Build configuration list for PBXNativeTarget "WKDocReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B454F5E158DC840009273AD /* Debug */,
+				1B454F5F158DC840009273AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1B454F30158DC83F009273AD /* Project object */;
+}
